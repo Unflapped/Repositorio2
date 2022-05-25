@@ -17,9 +17,6 @@ public class Agenda {
     private static int count = 0;
     private static String nombreAgenda="";
 
-    Agenda() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     /**
      * 
      * @param contacto contacto que queremos añadir

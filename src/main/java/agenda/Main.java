@@ -9,6 +9,7 @@
 
 package agenda;
 
+import static agenda.Agenda.ListaAgenda;
 import exceptions.ContactoRepetidoException;
 import java.util.ArrayList;
 
@@ -25,7 +26,7 @@ public class Main {
     public static void main(String[] args) {
        Contacto c1,c2,c3;
         System.out.println("Practica5.- Pruebas Junit");
-        Agenda Lista = new Agenda();
+        Agenda Lista = new Agenda("22");
         Contacto contacto1 = new Contacto("email_1","555 555 551","empleado_1");
         Contacto contacto2 = new Contacto("rmsces2122@gmail.com","555 555 552","Ramón");
         //Contacto contacto2 = new Contacto(null,null,null);
@@ -38,7 +39,7 @@ public class Main {
             }
         System.out.println("-- Listando los contactos añadidos ---");
            System.out.println(Lista.getContactos().toString());
-           //ListaAgenda(Lista);
+           ListaAgenda(Lista);
         System.out.println("-- Eliminando contacto con email_1 ...");
             Lista.eliminarContacto("email_1");
         System.out.println("-- Buscando contacto2  ..."); 

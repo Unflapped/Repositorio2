@@ -23,7 +23,7 @@ import sun.net.www.protocol.http.HttpURLConnection;
 public class AgendaTest {
    public Agenda Lista; 
     public AgendaTest() {
-    Lista = new Agenda(); }
+    Lista = new Agenda("22"); }
 
     @Test
     public void testAddContacto() throws Exception {
